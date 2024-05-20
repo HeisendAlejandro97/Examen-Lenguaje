@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Alejandro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1>Bienvenidos a la página de mi examen</h1>
+</header>
+<body>
+    <p>Esta entrega se realiza para la tercera evaluación de 
+        lenguaje de marcas con nuestro tutor Mario.</p>
+    <button id="click" onclick="boton()">Hacer click</button>
+    <a href="https://github.com/HeisendAlejandro97">Otros proyectos</a>
+    <p>También puedo realizar proyectos de menor escala como los siguientes:</p>
+    <h2>Calculadora</h2>
+    <div id="calculadora">
+        <button id="dc" onclick="decrement1()">-</button>
+        <p id="num1">0</p>
+        <button id="inc" onclick="increment1()">+</button>
+        <select name="calc" id="calc" onclick="calcu()">
+            <option value="nulo" id="lista">Selecciona un operando</option>
+            <option value="suma" id="lista">+</option>
+            <option value="resta" id="lista">-</option>
+            <option value="division" id="lista">/</option>
+            <option value="mult" id="lista">*</option>
+        </select>
+        <button onclick="decrement2()">-</button>
+        <p id="num2">0</p>
+        <button id="inc" onclick="increment2()">+</button>
+        <h3>=</h3>
+        <h2 id="resultado">0</h2>
+        <button id="op" onclick="operar()">Operar</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
